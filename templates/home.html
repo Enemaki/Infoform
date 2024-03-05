@@ -1,0 +1,15 @@
+<!--templates/home.html-->
+{% extends "base.html" %}
+{% block title %}home{% endblock title %}
+{% block content %}
+<div class="card m-3">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Marketinfo</h5>
+      <p class="card-text">Marketinfo info offers you a platform to share your information to those who are in need of it. To complete survey click on the button below.</p>
+      <a href="{% url 'info' %}" class="btn btn-primary">Click me</a>
+    </div>
+</div>
+{% endblock content %}
